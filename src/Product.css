@@ -1,0 +1,161 @@
+
+.main_container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.product_img{
+   max-width: 310px;
+   height: 290px auto;
+    border: 2px solid rgb(240, 237, 237);
+    padding: 8px;
+    text-align: center;
+    border-radius: 15px;
+    line-height: 10px;
+   /* margin: 10px; */
+   color: white;
+   text-decoration: none;
+}
+
+.product_img img{
+    width: 100% ;
+    height: 80%;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.product_img:hover img{
+transform: scale(1);
+}
+
+.product_img h2{
+    margin-top: 10px;
+}
+
+.parent_container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    
+}
+
+ .child_container{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    flex-wrap: wrap;
+    color:white;
+   
+} 
+
+.description{
+    
+    max-height:400px;
+    overflow-y: auto;
+}
+.description h1,h2,p{
+    margin-top: 15px;
+    line-height:30px;
+}
+
+.description::-webkit-scrollbar {
+    width: 10px;
+    background: white;
+    border-radius: 10px;
+  }
+  
+  .description::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .description::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+    height:80px;
+  
+  }
+  
+  
+  .description::-webkit-scrollbar-thumb:hover {
+    background: darkgray; 
+  }
+
+.search_box{
+   max-width: 400px;
+   margin:auto;
+   
+}
+.search_box input{
+    width: 93%;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    transition: .3s;
+    margin-bottom: 20px;
+    border: 3.5px solid black;
+}
+.search_box input:focus{
+
+    box-shadow: 0px 0px 6px 4px dodgerblue;
+}
+
+.searched_item{
+    width:250px;
+    height:260px auto;
+
+}
+
+.image{
+    width: 100%;
+    height: 180px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width:700px){
+
+    .navLink-container{
+        flex-direction: column;
+        line-height: 40px;
+    }
+    .product_img{
+        max-width: 220px;
+        height: 290px auto;
+        padding: 8px;
+        line-height: 10px;
+       margin:1px;
+     }
+     .description{
+        padding: 7px;
+        margin-top: 10px;
+        line-height:30px;
+        text-align: center;
+        
+     }
+     .description h1{
+        font-size: 1.6em;
+     }
+     .description h2{
+        font-size: 1.3em;
+     }
+     .description p {
+        text-align: left;
+        
+     }
+}
+
+
