@@ -5,7 +5,7 @@ import './Product.css';
 
 function Search() {
   const [text, setText] = useState("chicken");
-  const [loading, setLoading] = useState(false)
+ // const [loading, setLoading] = useState(false)
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function Search() {
       })
       .then((data) => {
         setList(data.meals || []);
-        setLoading(true);
+      //  setLoading(true);
       })
       .catch((error) => {
         <h2>Not found</h2>
